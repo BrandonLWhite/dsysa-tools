@@ -97,7 +97,7 @@ for(var gameday = 0; gameday < gamedays.length; ++gameday) {
 }
 
 /**
-TODO : Checks
+Checks
 - Number of games per team
 - No duplicates on game day (ie each team plays 1 game).  Maybe a min/max is best.  In this case, expecting 1/1
 - All games unique opponent
@@ -111,13 +111,13 @@ division.teams.forEach(team => {
         gamedates: [],
         opponents: [],
         uniqueLocations: new Set(),
-        home_cnt: 0
+        homeCnt: 0
     }
 });
 
 function accumulateGameCheck(game, teamChecks, isHome, opponentId) {
     if(isHome) {
-        ++teamChecks.home_cnt;
+        ++teamChecks.homeCnt;
     }
     teamChecks.gamedates.push(game.Start_Date);
     teamChecks.opponents.push(opponentId);
@@ -134,7 +134,7 @@ function analyzeTeamChecks(teamChecks) {
     const uniqueDates = (new Set(teamChecks.gamedates)).size;
     const uniqueOpponents = (new Set(teamChecks.opponents)).size;
     const uniqueSlots = teamChecks.uniqueLocations.size;
-    console.log(`${teamChecks.team.name}: ${totalGames} total games, ${uniqueDates} dates, ${uniqueOpponents} opponents, ${uniqueSlots} slots.`)
+    console.log(`${teamChecks.team.name}: ${totalGames} total games, ${uniqueDates} dates, ${uniqueOpponents} opponents, ${uniqueSlots} slots, isHome: ${teamChecks.homeCnt}.`)
 }
 Object.values(teamChecksById).forEach(teamChecks => analyzeTeamChecks(teamChecks));
 console.log();
