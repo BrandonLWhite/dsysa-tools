@@ -1,0 +1,5 @@
+Start_Date,Start_Time,End_Date,End_Time,Title,Description,Location,Location_Details,All_Day_Event,Event_Type,Team1_ID,Team1_Division_ID,Team1_Is_Home,Team2_ID,Team2_Division_ID,Affects_Standings
+9/19/2020,12:00 PM,9/19/2020,1:00 PM,Grona at Erwin,Exhibition,SCBC,Court 1,0,Game,5957273,5957250,1,5957275,5957250,0
+9/19/2020,11:00 AM,9/19/2020,12:00 PM,Thompson at Kresta,Exhibition,SCBC,Court 1,0,Game,5957279,5957250,1,5957277,5957250,0
+9/19/2020,9:00 AM,9/19/2020,10:00 AM,KWhite at Schwann,Exhibition,SCBC,Court 1,0,Game,5957276,5957250,1,5957280,5957250,0
+9/19/2020,10:00 AM,9/19/2020,11:00 AM,Zenor at Lux,Exhibition,SCBC,Court 1,0,Game,5957271,5957250,1,5957281,5957250,0
