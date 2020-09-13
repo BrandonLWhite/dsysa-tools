@@ -9,7 +9,7 @@ const homeChance = Chance(12345);
 const locationChance = Chance(12345);
 
 const isExhibition = false
-const selectedDivisionIdx = 0;  // TODO: Get rid of this, and run in a loop.
+const selectedDivisionIdx = 1;  // TODO: Get rid of this, and run in a loop.
 const gamedates = [
   '9/26/2020',
   '10/3/2020',
